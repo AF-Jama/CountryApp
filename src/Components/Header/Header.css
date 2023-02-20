@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maxWidth:1400px;
+}
+
+header{
+    min-height: 3vh;
+}
+
+#inner-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+
+#header-title{
+    margin: 0.5rem 0 1rem 0;
+    z-index: 2;
+}
+
+#header-title>h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: #5fc2cb;
+}
+
+nav{
+    /* width: 0;
+    overflow: hidden; */
+    /* border: 2px solid red; */
+}
+
+#nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+    transition: 2s ease-in-out;
+    /* color: white; */
+}
+
+#burger-btn-container{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.nav-link{
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    /* font-size: 1rem; */
+    /* margin: 10rem 0; */
+}
+
+/* #nav-links{
+    padding: 1.5rem;
+} */
+
+#home-link::before{
+    content: '🏚️';
+}
+
+@media screen and (min-width:800px){
+    #inner-header-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #burger-btn-container{
+        display: none;
+    }
+
+    nav{
+        width: auto;
+    }
+
+    #nav-links{
+        display: block;
+        position: relative;
+        width: auto;
+        padding: 0;
+        background: none;
+    }
+
+    .nav-link{
+        transition: 2s;
+        display: inline;
+        margin: 0 1rem 0 0;
+        color: black;
+    }
+}

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maxWidth:1400px;
+}
+
+#main-page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #202c37;
+}
+
+main{
+    flex: 1;
+    /* border: 2px solid red; */
+}
+
+#inner-main-container{
+    width: 95%;
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+}
+
+#country-card-container{
+    margin: 1.5rem 0;
+}
+
+#form-container{
+    /* border: 2px solid red; */
+}
+
+#country-input{
+    padding: 0.5rem;
+    width: 90%;
+    max-width: 400px;
+}
+
+@media screen and (min-width:800px){
+    #form-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #country-input{
+        padding: 1rem;
+    }
+
+    #country-card-container{
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maxCardWidth:400px;
+}
+
+#country-card{
+    width: 90%;
+    max-width: var(--maxCardWidth);
+    margin: 1rem auto;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* border: 2px solid red; */
+    padding: 0 0 1.5rem 0;
+}
+
+#country-card>img{
+    max-width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#country-details{
+    margin: 1rem 0 0 0;
+}
+
+#country-details>h3{
+    margin: 1rem 0;
+}
