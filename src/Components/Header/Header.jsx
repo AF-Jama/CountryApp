@@ -31,7 +31,7 @@ const Header = ()=>{
                     <h3>Countries</h3>
                 </div>   
 
-                <nav>
+                {/* <nav>
                     <div id="nav-links" ref={navLinksContainer}>
                         <a href="#" className="nav-link" id="home-link">Home</a>
                         <a href="#" className="nav-link" id="api-link">API</a>
@@ -41,7 +41,7 @@ const Header = ()=>{
                     <div id="burger-btn-container">
                         {visibility?<FontAwesomeIcon icon={faXmark} onClick={onButtonClick} color="white"/>:<FontAwesomeIcon icon={faBars} onClick={onButtonClick} color="black"/>}
                     </div>
-                </nav>
+                </nav> */}
             </div>
         </header>
     )
